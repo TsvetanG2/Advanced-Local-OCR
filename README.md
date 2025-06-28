@@ -216,8 +216,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📞 **Support & Community**
 
 - **Documentation**: [docs/](docs/) folder
-- **Bug Reports**: [GitHub Issues](https://github.com/yourusername/advanced-local-ocr-studio/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/yourusername/advanced-local-ocr-studio/discussions)
+- **Bug Reports**: [GitHub Issues](https://github.com/TsvetanG2/advanced-local-ocr-studio/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/TsvetanG2/advanced-local-ocr-studio/discussions)
 - **Show Support**: Star the repository if you find it useful!
 
 ---
