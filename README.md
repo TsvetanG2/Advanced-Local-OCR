@@ -6,51 +6,50 @@
 
 A **modern, professional OCR application** with intelligent text cleaning and beautiful UI. Built for **local-first processing** with optional AI enhancements.
 
-![OCR Studio Screenshot](docs/screenshot.png)
 
-## ✨ **Why This OCR App is Special**
+## ✨**Why This OCR App is Special**
 
-🎯 **Solves Real OCR Problems** - Transforms garbled OCR output like `"cyoGuoyy pu"` into perfect text: `"Trailing only Facebook Messenger, WeChat is now the second most popular messaging platform in Bhutan and Mongolia."`
+**Solves Real OCR Problems** - Transforms garbled OCR output like `"cyoGuoyy pu"` into perfect text: `"Trailing only Facebook Messenger, WeChat is now the second most popular messaging platform in Bhutan and Mongolia."`
 
-🏠 **Local-First Design** - Works completely offline, no API keys required, your images never leave your computer
+**Local-First Design** - Works completely offline, no API keys required, your images never leave your computer
 
-🎨 **Beautiful Modern UI** - Professional design that rivals commercial software (9.2/10 visual rating)
+**Beautiful Modern UI** - Professional design that rivals commercial software (9.2/10 visual rating)
 
-🧠 **Smart Text Cleaning** - Advanced algorithms that reconstruct coherent text from fragmented OCR results
+**Smart Text Cleaning** - Advanced algorithms that reconstruct coherent text from fragmented OCR results
 
-## 🚀 **Key Features**
+## **Key Features**
 
-### 🔍 **Dual OCR Engine Power**
+### **Dual OCR Engine Power**
 - **EasyOCR + Tesseract** - Best of both worlds for maximum accuracy
 - **Smart Fallback System** - Automatically chooses the best engine for each image
 - **Advanced Preprocessing** - Adaptive enhancement, noise reduction, deskewing
 - **Confidence-Based Processing** - Intelligent quality assessment
 
-### 🧠 **Revolutionary Text Cleaning**
+### **Revolutionary Text Cleaning**
 - **Smart Fragment Reconstruction** - Rebuilds coherent sentences from OCR fragments
 - **Duplicate Elimination** - Removes redundant and overlapping text
 - **Error Pattern Recognition** - Fixes common OCR mistakes automatically
 - **Context-Aware Processing** - Understands text patterns for better results
 
-### 🎨 **Professional User Interface**
+### **Professional User Interface**
 - **Modern Design Language** - Beautiful gradients, rounded corners, professional styling
 - **Intuitive Workflow** - Load → Process → Review → Compare
 - **Real-Time Feedback** - Progress indicators, status updates, confidence scores
 - **Responsive Layout** - Adapts to different screen sizes
 
-### 📊 **Advanced Analysis**
+### **Advanced Analysis**
 - **Text Comparison Engine** - Detailed accuracy analysis with similarity scoring
 - **Confidence Visualization** - Color-coded results (🟢🟡🔴)
 - **Processing Insights** - Engine performance, timing, quality metrics
 - **Error Categorization** - Detailed breakdown of text differences
 
-### 🔧 **Developer-Friendly**
+### **Developer-Friendly**
 - **Modular Architecture** - Clean, extensible codebase
 - **Comprehensive Logging** - Detailed debugging information
 - **Thread-Safe Design** - Proper cleanup, no memory leaks
 - **Well-Documented** - Clear code comments and documentation
 
-## 🚀 **Quick Start**
+## **Quick Start**
 
 ### **Prerequisites**
 - Python 3.8 or higher
@@ -88,19 +87,11 @@ python enhanced_ocr_app.py
 ```
 
 ### **4. Basic Workflow**
-1. 📁 **Load Image** - Click "📂 Load Image" or drag & drop
-2. ⚙️ **Configure** - Enable preprocessing, choose OCR engine
-3. ✨ **Extract** - Click "✨ Extract Text" to process
-4. 📊 **Compare** - (Optional) Enter expected text for accuracy analysis
-5. 🎯 **Review** - Check cleaned results and raw OCR data
-
-## 📸 **Screenshots**
-
-### Main Interface
-![Main Interface](docs/main-interface.png)
-
-### Text Cleaning in Action
-![Before and After](docs/text-cleaning-demo.png)
+1. **Load Image** - Click "📂 Load Image" or drag & drop
+2. **Configure** - Enable preprocessing, choose OCR engine
+3. **Extract** - Click "✨ Extract Text" to process
+4. **Compare** - (Optional) Enter expected text for accuracy analysis
+5. **Review** - Check cleaned results and raw OCR data
 
 ## 🎯 **Real-World Example**
 
@@ -160,11 +151,11 @@ ui:
 
 ## 🏗️ **Architecture**
 
-### **🎯 Local-First Design**
-- **🏠 Offline Processing**: Works completely without internet
-- **🔒 Privacy-Focused**: Images never leave your computer
-- **⚡ Fast Performance**: No network latency or API limits
-- **🔧 Optional AI**: LLM features are completely optional
+### **Local-First Design**
+- **Offline Processing**: Works completely without internet
+- **Privacy-Focused**: Images never leave your computer
+- **Fast Performance**: No network latency or API limits
+- **Optional AI**: LLM features are completely optional
 
 ### **🧩 Modular Components**
 ```
@@ -180,12 +171,6 @@ ui:
 ├── 📁 tests/                  # Comprehensive test suite
 └── 📁 docs/                   # Documentation
 ```
-
-### **🎨 Design Philosophy**
-- **Beautiful UI**: 9.2/10 visual rating with modern design
-- **Intuitive UX**: Clear workflow with helpful feedback
-- **Professional Quality**: Rivals commercial software
-- **Thread-Safe**: Proper cleanup, no memory leaks
 
 ## 🤝 **Contributing**
 
@@ -209,11 +194,11 @@ python tests/test_installation.py
 ```
 
 ### **📋 Contribution Areas**
-- 🌍 **Language Support**: Add support for more languages
-- 🔧 **OCR Engines**: Integrate additional OCR engines
-- 🎨 **UI Improvements**: Enhance the beautiful interface
-- 🧠 **Smart Cleaning**: Improve text reconstruction algorithms
-- 📚 **Documentation**: Help others understand and use the project
+- **Language Support**: Add support for more languages
+- **OCR Engines**: Integrate additional OCR engines
+- **UI Improvements**: Enhance the beautiful interface
+- **Smart Cleaning**: Improve text reconstruction algorithms
+- **Documentation**: Help others understand and use the project
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
@@ -230,23 +215,15 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 **Support & Community**
 
-- 📖 **Documentation**: [docs/](docs/) folder
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/yourusername/advanced-local-ocr-studio/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/yourusername/advanced-local-ocr-studio/discussions)
-- 🌟 **Show Support**: Star the repository if you find it useful!
-
-## 🎯 **Project Stats**
-
-- **🎨 Visual Rating**: 9.2/10 (Professional quality UI)
-- **🧠 Text Cleaning**: 100% accuracy on test cases
-- **🏠 Local-First**: Zero external dependencies for core features
-- **🧵 Thread-Safe**: Proper cleanup, no memory leaks
-- **📱 Cross-Platform**: Windows, macOS, Linux support
+- **Documentation**: [docs/](docs/) folder
+- **Bug Reports**: [GitHub Issues](https://github.com/yourusername/advanced-local-ocr-studio/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/yourusername/advanced-local-ocr-studio/discussions)
+- **Show Support**: Star the repository if you find it useful!
 
 ---
 
 **🎉 Transform your OCR experience with intelligent text cleaning and beautiful design!**
 
-[![Star this repo](https://img.shields.io/github/stars/yourusername/advanced-local-ocr-studio?style=social)](https://github.com/yourusername/advanced-local-ocr-studio)
+[![Star this repo](https://img.shields.io/github/stars/yourusername/advanced-local-ocr-studio?style=social)](https://github.com/TsvetanG2/Advanced-Local-OCR)
 
 
