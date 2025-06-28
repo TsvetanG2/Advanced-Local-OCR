@@ -217,7 +217,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - **Documentation**: [docs/](docs/) folder
 - **Bug Reports**: [GitHub Issues](https://github.com/TsvetanG2/advanced-local-ocr-studio/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/TsvetanG2/advanced-local-ocr-studio/discussions)
+- **Feature Requests**: [GitHub Discussions](https://github.com/TsvetanG2/Advanced-Local-OCR/discussions)
 - **Show Support**: Star the repository if you find it useful!
 
 ---
