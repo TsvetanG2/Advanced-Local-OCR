@@ -1,0 +1,24 @@
+# Development dependencies for Advanced Local OCR Studio
+
+# Testing
+pytest>=7.0.0
+pytest-qt>=4.0.0
+pytest-cov>=4.0.0
+
+# Code quality
+black>=22.0.0
+flake8>=5.0.0
+isort>=5.10.0
+mypy>=0.991
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+
+# Development tools
+pre-commit>=2.20.0
+twine>=4.0.0
+
+# Optional: For building executables
+# pyinstaller>=5.0.0
+# cx_Freeze>=6.0.0

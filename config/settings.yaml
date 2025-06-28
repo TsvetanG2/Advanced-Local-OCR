@@ -1,0 +1,155 @@
+app:
+  name: "OCR Document Processor"
+  version: "2.0.0"
+  language: "en"
+  theme: "light"
+  auto_save: true
+  max_recent_files: 10
+
+ocr:
+  engines:
+    easyocr:
+      enabled: true
+      gpu: false
+      languages: ['en']
+      text_threshold: 0.8  # Higher threshold for better accuracy
+      contrast_threshold: 0.2  # Higher contrast threshold
+      batch_size: 1  # Reduced for stability
+      min_size: 20  # Larger minimum size to filter noise
+      paragraph: false
+      width_ths: 0.8  # Width threshold for text detection
+      height_ths: 0.8  # Height threshold for text detection
+      decoder: 'greedy'  # Use greedy decoder
+      beamWidth: 5  # Beam search width
+    tesseract:
+      enabled: true
+      oem: 1  # LSTM OCR Engine
+      psm: 6  # Uniform block of text (changed from 7)
+      language: "eng"
+      char_whitelist: ""  # Remove whitelist to allow all characters
+      preserve_interword_spaces: 1
+      tessedit_do_invert: 0
+
+  confidence_threshold: 0.3  # Lower threshold to catch more results
+  fallback_to_tesseract: true
+  min_text_length: 2  # Minimum text length to consider valid
+
+preprocessing:
+  # More conservative preprocessing to avoid destroying text
+  gaussian_blur:
+    kernel_size: [3, 3]  # Smaller kernel to preserve detail
+    sigma: 0
+  adaptive_threshold:
+    max_value: 255
+    adaptive_method: "ADAPTIVE_THRESH_GAUSSIAN_C"
+    threshold_type: "THRESH_BINARY"
+    block_size: 15  # Larger block size for better results
+    c: 3  # Higher C value
+  morphology:
+    kernel_size: [2, 2]  # Slightly larger for better cleaning
+    operation: "MORPH_CLOSE"
+  deskew:
+    enabled: false  # Disable deskewing initially to avoid issues
+    angle_threshold: 45
+  resize:
+    enabled: true
+    max_display_size: 800  # Higher resolution for better OCR
+    interpolation: "INTER_CUBIC"
+  # New settings for better preprocessing
+  contrast_enhancement:
+    enabled: true
+    clip_limit: 2.0
+    tile_grid_size: [8, 8]
+  noise_reduction:
+    enabled: true
+    bilateral_filter: true
+
+llm:
+  provider: "disabled"  # DISABLED BY DEFAULT - purely local OCR
+  openai:
+    model: "gpt-3.5-turbo"
+    api_key: ""  # Set via environment variable OPENAI_API_KEY
+    max_tokens: 1000
+    temperature: 0.1
+  anthropic:
+    model: "claude-3-haiku-20240307"
+    api_key: ""  # Set via environment variable ANTHROPIC_API_KEY
+    max_tokens: 1000
+  local:
+    endpoint: "http://localhost:11434"
+    model: "llama2"
+
+  correction:
+    enabled: false  # DISABLED BY DEFAULT
+    confidence_threshold: 0.6
+    context_window: 200
+
+text_processing:
+  normalization:
+    unicode_form: "NFKC"
+    remove_punctuation: true
+    preserve_patterns:
+      - "legal_refs"  # Future: for legal document processing
+      - "email_addresses"
+      - "urls"
+  
+  comparison:
+    algorithm: "sequence_matcher"  # sequence_matcher, levenshtein
+    similarity_threshold: 0.8
+    case_sensitive: false
+
+ui:
+  window:
+    width: 1200
+    height: 800
+    min_width: 800
+    min_height: 600
+  
+  image_display:
+    max_size: 400
+    quality: "high"
+  
+  themes:
+    light:
+      primary_color: "#2196F3"
+      secondary_color: "#FFC107"
+      background_color: "#FFFFFF"
+      text_color: "#000000"
+    dark:
+      primary_color: "#1976D2"
+      secondary_color: "#FF9800"
+      background_color: "#121212"
+      text_color: "#FFFFFF"
+
+logging:
+  level: "INFO"
+  file: "logs/ocr_app.log"
+  max_size: "10MB"
+  backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+export:
+  default_format: "json"
+  supported_formats: ["json", "csv", "xlsx", "pdf"]
+  output_directory: "output"
+  include_metadata: true
+
+performance:
+  max_image_size: 4096
+  memory_limit: "1GB"
+  timeout_seconds: 300
+  parallel_processing: false
+
+# Language support framework (for future extensions)
+languages:
+  supported: ["en"]
+  default: "en"
+  fallback: "en"
+  
+  # Future language configurations
+  # bg:
+  #   ocr_language: "bul"
+  #   legal_patterns: ["чл", "ал", "т"]
+  # de:
+  #   ocr_language: "deu"
+  #   legal_patterns: ["Art", "Abs"]

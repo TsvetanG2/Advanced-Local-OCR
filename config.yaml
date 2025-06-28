@@ -1,0 +1,6 @@
+gpu: true
+legal_mode: true
+log_file: ocr_app.log
+multilang: true
+preprocessing: adaptive
+threshold: 0.5

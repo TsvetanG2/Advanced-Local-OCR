@@ -1,0 +1,26 @@
+# Core dependencies (required)
+PyQt5>=5.15.0
+opencv-python>=4.5.0
+numpy>=1.21.0
+Pillow>=8.3.0
+PyYAML>=6.0
+
+# OCR engines (at least one required)
+easyocr>=1.6.0
+pytesseract>=0.3.8
+
+# Text processing (required for comparison features)
+python-Levenshtein>=0.12.2
+
+# Optional AI/LLM features (can be installed separately)
+# openai>=1.0.0
+# anthropic>=0.7.0
+
+# Optional export features (can be installed separately)
+# pandas>=1.3.0
+# openpyxl>=3.0.9
+# reportlab>=3.6.0
+
+# Optional monitoring (can be installed separately)
+# psutil>=5.8.0
+# requests>=2.26.0
