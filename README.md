@@ -148,6 +148,10 @@ ui:
   window_size: [1200, 800]
   auto_save_settings: true
 ```
+## **Media**
+### **Main window**
+![Screenshot 2025-06-28 173301](https://github.com/user-attachments/assets/1e568fc3-731e-4189-8dd1-fc2867d927ce)
+
 
 ## 🏗️ **Architecture**
 
